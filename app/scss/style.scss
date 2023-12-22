@@ -26,27 +26,27 @@
                 box-shadow: 0 0 2px 2px lightblue;
             }
         }
+    }
 
-        &__arrow {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background: none;
-            border: none;
-            cursor: pointer;
-        
-            &--left {
-              left: -30px;
-            }
-        
-            &--right {
-              right: -30px;
-            }
-        
-            svg {
-              fill: #8BA8BC; // Цвет можно изменить
-            }
-          }
+    &__arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: none;
+        border: none;
+        cursor: pointer;
+
+        &--left {
+            left: -30px;
+        }
+
+        &--right {
+            right: -30px;
+        }
+
+        svg {
+            fill: #8BA8BC; // Цвет можно изменить
+        }
     }
 }
 
@@ -55,17 +55,17 @@
     background: #ccc; // Цвет фона полосы прокрутки
     position: relative;
     margin-top: 10px; // Отступ сверху
-  
+
     &__thumb {
-      height: 100%;
-      background: #888; // Цвет ползунка
-      width: 100px; // Начальная ширина ползунка
-      position: absolute;
-      cursor: pointer;
+        height: 100%;
+        background: #888; // Цвет ползунка
+        width: 100px; // Начальная ширина ползунка
+        position: absolute;
+        cursor: pointer;
     }
-  }
-  
-  
+}
+
+
 
 
 @import "media";
