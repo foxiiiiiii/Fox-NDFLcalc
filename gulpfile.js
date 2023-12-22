@@ -31,7 +31,7 @@ async function styles() {
 }
 
 function scripts() {
-  return src(["node_modules/jquery/dist/jquery.js", "app/js/main.js"])
+  return src(["node_modules/jquery/dist/jquery.js", "node_modules/slick-carousel/slick/slick.js", "app/js/main.js"])
     .pipe(concat("main.min.js"))
     .pipe(uglify())
     .pipe(dest("app/js"))
@@ -49,7 +49,7 @@ async function images() {
     .pipe(
       imagemin([
         gifsicle({ interlaced: true }),
-        mozjpeg({ quality: 75, progressive: true }),
+        mozjpeg({ quality: 95, progressive: true }),
         optipng({ optimizationLevel: 5 }),
         svgo(),
       ])
@@ -58,7 +58,7 @@ async function images() {
 }
 
 function build() {
-  return src(["app/**/*.html", "app/css/style.min.css", "app/js/main.min.js"], {
+  return src(["app/**/*.html", "app/css/style.min.css", "app/js/main.min.js", "app/fonts/**"], {
     base: "app",
   }).pipe(dest("dist"));
 }

@@ -1,6 +1,11 @@
 @import "vars";
 @import "fonts";
-@import "global";
 @import "reset";
+@import "libs";
+@import "global";
+
+.slider-history {
+    margin-top: 20px;
+}
 
 @import "media";
