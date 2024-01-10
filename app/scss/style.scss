@@ -12,60 +12,20 @@
         display: flex;
         overflow-x: auto;
         white-space: nowrap;
-
-        &__button {
-            margin: 0 10px;
-            padding: 5px 15px;
-            background-color: #f0f0f0;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-
-            &:focus {
-                outline: none;
-                box-shadow: 0 0 2px 2px lightblue;
-            }
         }
-    }
-
-    &__arrow {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background: none;
+    &__button {
+        margin: 0 10px;
+        padding: 5px 15px;
+        background-color: #f0f0f0;
         border: none;
+        border-radius: 4px;
         cursor: pointer;
 
-        &--left {
-            left: -30px;
-        }
-
-        &--right {
-            right: -30px;
-        }
-
-        svg {
-            fill: #8BA8BC; // Цвет можно изменить
+        &:focus {
+            outline: none;
+            box-shadow: 0 0 2px 2px lightblue;
         }
     }
 }
-
-.slider-scrollbar {
-    height: 10px; // Высота полосы прокрутки
-    background: #ccc; // Цвет фона полосы прокрутки
-    position: relative;
-    margin-top: 10px; // Отступ сверху
-
-    &__thumb {
-        height: 100%;
-        background: #888; // Цвет ползунка
-        width: 100px; // Начальная ширина ползунка
-        position: absolute;
-        cursor: pointer;
-    }
-}
-
-
-
 
 @import "media";
